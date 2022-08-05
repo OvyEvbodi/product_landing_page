@@ -1,0 +1,231 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+:root{
+    --green_color:var(--green_color)
+}
+header{
+    background-color: rgba(185, 142, 142, 0.856);
+    /*background-color: rgba(45, 119, 121, 0.719);*/
+    position: sticky;
+    top:0;
+    width:100vw;
+}
+#header-img{
+    width:60px;
+    filter: grayscale(1);
+}
+#container{
+    display:flex;
+    justify-content: space-between;
+    padding:0.5rem 1rem;
+    flex-wrap:wrap;
+
+}
+#logo{
+    display:flex;
+    justify-content: start;
+    align-items: right;
+    
+}
+#title{
+    color: rgba(54, 48, 48, 0.842);
+    padding:1rem;
+    font-family: cursive;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-size: 2rem;
+}
+#nav-bar{
+    margin-left: auto;
+    margin-right: 1rem;
+    display:flex;
+    align-items:center;
+}
+.nav-link{
+    padding: 7px 14px;
+    text-decoration:none;
+    color:rgb(66, 62, 62);
+    font-variant: small-caps;
+    font-weight: 600;
+    letter-spacing:2px;
+    border-right: 1px solid rgb(248, 246, 246);
+}
+.nav-link:hover{
+    background-color: rgba(45, 119, 121, 0.685);
+}
+
+#search_container{
+   
+    display: flex;
+    align-items: center;
+    padding:1rem 2rem;
+}
+#search_container input{
+    width:180px;
+    padding:1rem 1rem;
+    border: none;
+    border-radius: 40px;
+
+}
+#search_container button{
+    margin-left: -3rem;
+    background-color: rgb(95, 93, 93);
+    border-radius: 40px;
+    padding:0.4rem;
+    cursor: pointer;
+    outline: none;
+    color: #ccc;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+#main{
+    background-image: url("../images/bag_model.png");
+    background-attachment:fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.divider{
+    width:80%;
+    background-color:rgba(66, 62, 62, 0.596);
+    color: rgb(45, 119, 121);
+    padding:2rem;
+    margin: 2rem auto;
+    font-size: 1.5rem ;
+    font-variant: small-caps;
+    text-align: center;
+    letter-spacing: 8px;
+    
+}
+.product_lineup{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: 2rem auto;
+    /*background-color: rgba(45, 119, 121, 0.5);*/
+    background-color: #fff;
+    padding: 2rem;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height:200px;
+    border-radius: 5px;
+    box-shadow:5px 3px 3px rgb(172, 170, 170);
+    background-color: #fff;
+    margin:0 2em 2em 0;
+    
+}
+.product p{
+    color: rgba(54, 48, 48, 0.842);
+    text-align: center;
+    margin:7px;
+}
+.prod_img{
+    width:100px;
+    margin-bottom: 0.8rem;
+}
+.category p{
+    font-size: 2rem;
+    color: rgb(66, 62, 62);
+    text-transform: capitalize;
+    
+}
+.click_category:hover{
+    color: rgba(45, 119, 121, 0.719);
+    transform: scale(1.06);
+    cursor: pointer;
+
+}
+.buy{
+    padding:0.4rem;
+    background-color: rgb(179, 13, 13);
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(71, 70, 70);
+    margin-bottom:7px;
+}
+.buy:hover{
+    background-color: rgba(201, 22, 22, 0.911);
+}
+#about_desc{
+    padding: 3em;
+    text-align: center;
+    color: rgb(66, 62, 62);
+    font-weight: 700;
+    background-color: #fff;
+    line-height: 1.5;
+}
+#video_container{
+    
+    text-align:center;
+}
+#video{
+    width:300px;
+}
+
+footer{
+    width: 100vw;
+    min-height: 100px;
+    background-color: rgba(54, 48, 48, 0.942);
+    color: #ccc;
+    text-align: center;
+    padding:2em;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3em;
+}
+.socials img{
+    width: 30px;
+    margin-right:16px;
+}
+#email{
+    padding: 7px 16px;
+    border: 1px solid rgba(45, 119, 121, 0.919);
+    color: rgba(54, 48, 48, 0.842);
+}
+#form {
+    margin:16px 0;
+}
+#submit{
+    padding:7px 16px;
+    background:rgba(45, 119, 121, 1);
+}
+#submit:hover{
+    background-color: rgba(45, 119, 121, 0.795);
+}
+#copyright{
+    color: rgba(163, 157, 157, 0.822);
+}
+
+@media (max-width:600px){
+    #video{
+        width:200px;
+    }
+    header{ 
+        background-color: rgb(185, 142, 142);
+    }
+    #search_container{
+        display: none;
+
+    }
+    #header-img{
+        width:30px;
+
+    }
+    #title{
+        font-size:1rem;
+    }
+}
